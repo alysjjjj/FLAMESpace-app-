@@ -3,52 +3,50 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="ExtraText"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9FFF2"
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="279dp"
-        android:layout_height="258dp"
-        android:layout_marginTop="116dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/h"
-        tools:ignore="MissingClass"
-        android:contentDescription="@string/todo" />
-
     <Button
         android:id="@+id/ins"
         android:layout_width="260dp"
         android:layout_height="68dp"
+        android:layout_marginBottom="212dp"
         android:backgroundTint="#697B54"
-        android:text="@string/instructor"
-        android:textSize="25sp"
+        android:text="SIGN UP"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="453dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/stud"
         android:layout_width="260dp"
         android:layout_height="68dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#697B54"
-        android:text="@string/student"
-        android:textSize="25sp"
+        android:text="LOGIN"
         android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ins"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="382dp"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="265dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ff" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

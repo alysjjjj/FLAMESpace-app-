@@ -5,4 +5,25 @@
     <string name="student">Student</string>
     <string name="instructor">Instructor</string>
     <string name="todo">TODO</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="no_account">No account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="todoo">TODO</string>
+    <string name="todooo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="be">BE</string>
+    <string name="cahs">CAHS</string>
+    <string name="building">BUILDING</string>
+    <string name="nh">NH</string>
+    <string name="ptc">PTC</string>
+    <string name="ptc_rooms">PTC ROOMS</string>
+    <string name="mba">MBA</string>
+    <string name="vv">TODO</string>
+    <string name="cma">CMA</string>
+    <string name="account">Account</string>
+    <string name="jan_01_2020">JAN 01 2020</string>
+    <string name="cancel">CANCEL</string>
+    <string name="current_reservation">CURRENT RESERVATION</string>
 </resources>
