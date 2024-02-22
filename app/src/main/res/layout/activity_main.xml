@@ -6,41 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9FFF2"
+    android:padding="20dp"
     tools:context=".MainActivity">
-
-
-    <Button
-        android:id="@+id/mainSignup"
-        android:layout_width="300dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="112dp"
-        android:backgroundTint="@color/darkGreen"
-        android:fontFamily="@font/Gilgan"
-        android:textStyle="bold"
-        android:text="SIGN UP"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/mainLogin"
-        android:layout_width="300dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="@color/darkGreen"
-        android:fontFamily="@font/Gilgan"
-        android:text="LOGIN"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/mainSignup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -51,6 +18,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mainLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        style="@style/ButtonGreen"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@id/mainSignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mainSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        style="@style/ButtonGreen"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
