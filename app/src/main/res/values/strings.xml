@@ -99,5 +99,6 @@
     <string name="signup_phinma_email">PHINMA Email</string>
     <string name="title_sign_up">SIGN UP</string>
     <string name="signup_re_password">Re-type Password</string>
+    <string name="tv_capacity">50 people capacity</string>
 
 </resources>

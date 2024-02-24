@@ -24,7 +24,7 @@
         android:layout_marginTop="88dp"
         android:textStyle="bold"
         android:text="SETTINGS"
-        android:textSize="18dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +38,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="159dp">
+        tools:layout_editor_absoluteY="159dp"
+        tools:ignore="MissingConstraints">
 
 
         <TextView

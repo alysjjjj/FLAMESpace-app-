@@ -5,18 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9FFF2"
+    android:padding="20dp"
     tools:context=".Profile">
 
-
-    <ImageView
-        android:id="@+id/btn1"
-        android:layout_width="37dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="52dp"
+    <FrameLayout
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back2" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/circular_bg"
+            android:contentDescription="Back Button"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="7dp"
+            android:src="@drawable/ic_arrow_back_white"
+            android:layout_gravity="center"
+            android:contentDescription="Back Button Icon"/>
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -40,8 +53,8 @@
         android:textSize="25sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="242dp" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="229dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -180,16 +193,5 @@
 
 
     </androidx.cardview.widget.CardView>
-
-    <ImageView
-        android:id="@+id/setting"
-        android:layout_width="36dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_settings_24" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
