@@ -5,18 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9FFF2"
+    android:padding="20dp"
     tools:context=".Profile">
 
-
-    <ImageView
-        android:id="@+id/btn1"
-        android:layout_width="37dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="52dp"
+    <FrameLayout
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back2" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/circular_bg"
+            android:contentDescription="Back Button"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="7dp"
+            android:src="@drawable/ic_arrow_back_white"
+            android:layout_gravity="center"
+            android:contentDescription="Back Button Icon"/>
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -30,9 +43,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/gilgan"
+        android:text="Elyssa Salvador"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="150dp"
+        android:fontFamily="@font/gilgan"
+        android:text="03-2223-797831"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/profileCardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/profileCardview"
         android:layout_width="375dp"
-        android:layout_height="575dp"
+        android:layout_height="400dp"
         android:backgroundTint="#697B54"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,38 +85,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.992">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
-            android:text="Elyssa Salvador"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="90dp"
-            android:text="03-2223-797831"
-            android:textColor="@color/white"
-            android:textSize="12dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.0" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="250dp"
@@ -88,8 +101,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Edit Profile"
-                android:textSize="19dp"
+                android:text="Account"
+                android:textSize="19sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -180,16 +193,5 @@
 
 
     </androidx.cardview.widget.CardView>
-
-    <ImageView
-        android:id="@+id/setting"
-        android:layout_width="36dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_settings_24" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
