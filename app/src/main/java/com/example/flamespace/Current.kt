@@ -1,28 +1,30 @@
 package com.example.flamespace
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 
 class Current : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_current)
 
-        val but = findViewById<Button>(/* id = */ R.id.btn22)
-        but.setOnClickListener {
+        val backButton = findViewById<ImageView>(R.id.backButton)
+        backButton.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 
-        val button = findViewById<ImageView>(/* id = */ R.id.bt)
-        button.setOnClickListener {
-            val int = Intent(this, Ptc_room::class.java)
-            startActivity(int)
-        }
+        //val cancelButton = findViewById<Button>(R.id.cancel_doneButton)
+
+        // Assuming you have a variable called reservationStatus which holds the status of the reservation
+        // when (reservationStatus) {
+        //     "approval_process" -> cancelButton.setText(R.string.cancel)
+        //     "ended" -> cancelButton.setText(R.string.done)
+        //     else -> {
+        //         // Handle other cases if needed
+        //     }
+        // }
     }
 }

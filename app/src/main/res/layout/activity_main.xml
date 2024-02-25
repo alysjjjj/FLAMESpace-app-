@@ -17,13 +17,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ff" />
+        app:srcCompat="@drawable/ff"
+        android:contentDescription="@string/main_logo" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/mainLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login_title"
         style="@style/ButtonGreen"
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@id/mainSignup"
@@ -34,7 +35,7 @@
         android:id="@+id/mainSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
+        android:text="@string/title_sign_up"
         style="@style/ButtonGreen"
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"

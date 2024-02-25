@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:padding="20dp"
+    tools:context=".PTC_Rooms">
+
+    <FrameLayout
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:padding="15dp"
+            app:tint="@color/new_darkGreen"
+            android:src="@drawable/ic_arrow_back_white"
+            android:layout_gravity="center"
+            android:contentDescription="@string/back_button"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tit_ptc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/ptc_title"
+        android:contentDescription="@string/ptc_des"
+        android:textAlignment="center"
+        android:fontFamily="@font/lemonmilk"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/new_darkGreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="376dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tit_ptc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc_201"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:contentDescription="@string/computer_room"
+                    android:src="@drawable/computer_laboratory"
+                    app:tint="@color/new_darkGreen"/>
+
+                <TextView
+                    android:id="@+id/ptc_201_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc201"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/ptc_201_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                    android:contentDescription="@string/next_schedule" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc301"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/law_room"
+                    android:contentDescription="@string/law_room"
+                    app:tint="@color/new_darkGreen"/>
+
+                <TextView
+                    android:id="@+id/ptc_301_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc301"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_301_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                    android:contentDescription="@string/next_schedule" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc_302"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/standard_classroom"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/class_room" />
+
+                <TextView
+                    android:id="@+id/ptc_302_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc302"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_302_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    android:contentDescription="@string/next_schedule"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc_303"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/computer_laboratory"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/computer_room" />
+
+                <TextView
+                    android:id="@+id/ptc_303_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc303"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_303_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    android:contentDescription="@string/next_schedule"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc_304"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/computer_laboratory"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/computer_room" />
+
+                <TextView
+                    android:id="@+id/ptc_304_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc304"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_304_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    android:contentDescription="@string/next_schedule"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc_305"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/computer_laboratory"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/computer_room" />
+
+                <TextView
+                    android:id="@+id/ptc_305_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc305"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_305_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                    android:contentDescription="@string/next_schedule" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ptc_306"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/computer_laboratory"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/computer_room" />
+
+                <TextView
+                    android:id="@+id/ptc_306_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc306"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_306_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:contentDescription="@string/next_schedule"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/standard_classroom"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/class_room" />
+
+                <TextView
+                    android:id="@+id/ptc_403"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc403"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_403_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    android:contentDescription="@string/next_schedule"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/standard_classroom"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/class_room" />
+
+                <TextView
+                    android:id="@+id/ptc_404"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc404"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_404_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    android:contentDescription="@string/next_schedule"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/standard_classroom"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/class_room" />
+
+                <TextView
+                    android:id="@+id/ptc_405"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc405"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_405_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                    android:contentDescription="@string/next_schedule" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/standard_classroom"
+                    app:tint="@color/new_darkGreen"
+                    android:contentDescription="@string/class_room" />
+
+                <TextView
+                    android:id="@+id/ptc_406"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/ptc406"
+                    android:fontFamily="@font/gilgan"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:id="@+id/ptc_406_pic"
+                    android:layout_width="36dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginTop="26dp"
+                    app:tint="@color/new_midGreen"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+                    android:contentDescription="@string/next_schedule" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
