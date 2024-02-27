@@ -24,9 +24,13 @@
     <string name="cma">CMA</string>
     <string name="account">Account</string>
     <string name="jan_01_2020">JAN 01 2020</string>
-    <string name="cancel">CANCEL</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="doneandcancel">Cancel or Done Button</string>
+    <string name="history">HISTORY</string>
     <string name="current_reservation">CURRENT RESERVATION</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="main_logo">FLAMESpace Logo</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -100,5 +104,62 @@
     <string name="title_sign_up">SIGN UP</string>
     <string name="signup_re_password">Re-type Password</string>
     <string name="tv_capacity">50 people capacity</string>
+
+    <string name="be_des">BE Building</string>
+    <string name="cahs_des">CAHS Building</string>
+    <string name="cma_des">CMA Building</string>
+    <string name="mba_des">MBA Building</string>
+    <string name="nh_des">NH Building</string>
+    <string name="ptc_des">PTC Building</string>
+
+    <string name="be_title">BASIC EDUCATION</string>
+    <string name="cahs_title">COLLEGE OF ALLIED HOSPITALITY AND SCIENCE</string>
+    <string name="cma_title">COLLEGE OF MANAGEMENT AND ACCOUNTANCY</string>
+    <string name="mba_title">MBA</string>
+    <string name="nh_title">NORTH HALL</string>
+    <string name="ptc_title">PTC</string>
+
+    <!-- DESCRIPTIONS -->
+
+    <string name="law_room">Law Room</string>
+    <string name="class_room">Standard Classroom</string>
+    <string name="computer_room">Computer Lab</string>
+    <string name="science_room">Science Lab</string>
+    
+    <string name="current_image">Current Image</string>
+
+    <string name="room_code_example">PTC 201</string>
+    <string name="sched_example">7:30 am - 9:00 am</string>
+
+    <string name="ptc201">PTC 201</string>
+    <string name="ptc301">PTC 301</string>
+    <string name="ptc302">PTC 302</string>
+    <string name="ptc303">PTC 303</string>
+    <string name="ptc304">PTC 304</string>
+    <string name="ptc305">PTC 305</string>
+    <string name="ptc306">PTC 306</string>
+    <string name="ptc403">PTC 403</string>
+    <string name="ptc404">PTC 404</string>
+    <string name="ptc405">PTC 405</string>
+    <string name="ptc406">PTC 406</string>
+
+    <string name="nh111">NH 111</string>
+    <string name="nh112">NH 112</string>
+
+    <string name="mba307">MBA 307</string>
+    <string name="mba308">MBA 308</string>
+
+    <string name="cma323">CMA 323</string>
+    <string name="cma324">CMA 324</string>
+
+    <string name="cahs123">CAHS 123</string>
+    <string name="cahs124">CAHS 124</string>
+
+    <string name="be123">BE 123</string>
+    <string name="be124">BE 124</string>
+
+    <string name="next_schedule">Schedule</string>
+    <string name="next_reservation">Reservation</string>
+    <string name="back_button">Back Button</string>
 
 </resources>

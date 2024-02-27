@@ -13,11 +13,14 @@
         android:theme="@style/Theme.FLAMESpace"
         tools:targetApi="31">
         <activity
+            android:name=".PTC_Rooms"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.FLAMESpace">
             <intent-filter>
@@ -31,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".Current"
-            android:exported="false" />
-        <activity
-            android:name=".Sign_up"
             android:exported="false" />
         <activity
             android:name=".Reservation"
@@ -57,9 +57,6 @@
             android:name=".Settings"
             android:exported="false" />
         <activity
-            android:name=".Ptc_room"
-            android:exported="false" />
-        <activity
             android:name=".History"
             android:exported="false" />
         <activity
@@ -67,9 +64,6 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="false" />
-        <activity
-            android:name=".SignIn"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -81,9 +75,9 @@
             </intent-filter>
         </activity>
 
-        <meta-data
+        <!-- <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:resource="@array/preloaded_fonts" /> -->
     </application>
 
 </manifest>
