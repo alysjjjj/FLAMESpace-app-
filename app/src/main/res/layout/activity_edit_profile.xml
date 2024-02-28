@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Edit_profile">
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/btn1"
+        android:layout_width="37dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwhite"
+        android:importantForAccessibility="no" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="279dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/custom_edittxt"
+        android:fontFamily="@font/gilgann"
+        android:hint="@string/enter_your_name"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/blk"
+        android:layout_width="279dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edittxt"
+        android:fontFamily="@font/gilgann"
+        android:hint="@string/enter_your_block"
+
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="279dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="154dp"
+        android:background="@drawable/custom_edittxt"
+        android:fontFamily="@font/gilgann"
+        android:hint="@string/enter_your_new_password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="188dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="#697B54"
+        android:fontFamily="@font/gilgann"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/name"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/blockEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="270dp"
+        android:text="@string/block"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="380dp"
+        android:text="Password"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
