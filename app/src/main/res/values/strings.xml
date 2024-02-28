@@ -79,7 +79,7 @@
         <font color="#99BC85"><b>Login</b></font>
         if you already have an account.
     </string>
-    <string name="login_email">Email or Student ID</string>
+    <string name="login_email">PHINMA Email or Student ID</string>
     <string name="login_password">Password</string>
     <string name="login_forgot_pw">Forgot Password?</string>
     <string name="login_havent_account">
