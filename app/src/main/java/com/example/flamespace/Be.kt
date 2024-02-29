@@ -10,7 +10,7 @@ class Be : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_be)
 
-        val buttonClick = findViewById<ImageView>(R.id.boton)
+        val buttonClick = findViewById<ImageView>(R.id.backButton)
         buttonClick.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)

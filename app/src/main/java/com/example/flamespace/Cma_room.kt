@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.example.flamespace.R.id.boton
 
 class Cma_room : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -13,7 +12,7 @@ class Cma_room : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cma_room)
 
-        val buttonClick = findViewById<ImageView>(boton)
+        val buttonClick = findViewById<ImageView>(R.id.backButton)
         buttonClick.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)

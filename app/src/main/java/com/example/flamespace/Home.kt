@@ -26,7 +26,7 @@ class Home : AppCompatActivity() {
 
         val button = findViewById<Button>(ptc)
         button.setOnClickListener {
-            val int = Intent(this, Ptc_room::class.java)
+            val int = Intent(this, PTC_Rooms::class.java)
             startActivity(int)
         }
 

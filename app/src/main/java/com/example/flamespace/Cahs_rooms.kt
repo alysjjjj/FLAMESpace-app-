@@ -10,7 +10,7 @@ class Cahs_rooms : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cahs_rooms)
 
-        val buttonClick = findViewById<ImageView>(R.id.boton)
+        val buttonClick = findViewById<ImageView>(R.id.backButton)
         buttonClick.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)

@@ -46,7 +46,7 @@ class Reservation : AppCompatActivity() {
 
         val button = findViewById<ImageView>(/* id = */ bt)
         button.setOnClickListener {
-            val int = Intent(this, Ptc_room::class.java)
+            val int = Intent(this, PTC_Rooms::class.java)
             startActivity(int)
         }
         val but = findViewById<Button>(/* id = */ save)
