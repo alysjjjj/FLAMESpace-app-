@@ -31,14 +31,28 @@
                 android:layout_alignParentTop="true"/>
 
             <TextView
+                android:id="@+id/history_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_capacity"
+                android:text="@string/sched_example"
                 android:textSize="11sp"
                 android:fontFamily="@font/gilgan"
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="20dp"
                 android:layout_below="@id/tv_room"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/history_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="February 29, 2024"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/gilgan"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/history_time"
                 android:layout_alignParentStart="true"/>
 
             <ImageView
