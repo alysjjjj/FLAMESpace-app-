@@ -3,6 +3,7 @@ package com.example.flamespace
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 
 class PTC_Rooms : AppCompatActivity(), View.OnClickListener {
@@ -10,6 +11,12 @@ class PTC_Rooms : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ptc_rooms)
 
+        val backButton = findViewById<ImageView>(R.id.backButton)
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
+
+        // Set click listeners for room views
         findViewById<View>(R.id.ptc_201).setOnClickListener(this)
         findViewById<View>(R.id.ptc_301).setOnClickListener(this)
         findViewById<View>(R.id.ptc_302).setOnClickListener(this)
@@ -24,7 +31,6 @@ class PTC_Rooms : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
-
         when (v.id) {
             R.id.ptc_201 -> handleRoomClick("Room 201")
             R.id.ptc_301 -> handleRoomClick("Room 301")
@@ -41,8 +47,6 @@ class PTC_Rooms : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun handleRoomClick(roomName: String) {
-
         Toast.makeText(this, "Clicked on $roomName", Toast.LENGTH_SHORT).show()
-
     }
 }

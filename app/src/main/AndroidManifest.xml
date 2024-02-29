@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FLAMESpace"
         tools:targetApi="31">
+
         <activity
             android:name=".PTC_Rooms"
             android:exported="false" />
@@ -23,11 +24,6 @@
             android:exported="true"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.FLAMESpace">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Edit_profile"
@@ -70,7 +66,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

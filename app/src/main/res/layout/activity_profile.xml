@@ -9,7 +9,6 @@
     tools:context=".Profile">
 
     <FrameLayout
-        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="1dp"
@@ -19,10 +18,11 @@
         <ImageView
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:background="@drawable/circular_bg"
+            android:background="@drawable/circular_dark_bg"
             android:contentDescription="Back Button"/>
 
         <ImageView
+            android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingStart="7dp"
@@ -32,7 +32,7 @@
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/profile_pic"
         android:layout_width="152dp"
         android:layout_height="144dp"
         android:layout_gravity="center"
@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:fontFamily="@font/gilgan"
@@ -57,7 +57,7 @@
         tools:layout_editor_absoluteY="229dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_studentNum"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginLeft="150dp"
@@ -66,35 +66,37 @@
         android:fontFamily="@font/gilgan"
         android:text="03-2223-797831"
         android:textColor="@color/black"
-        android:textSize="15dp"
+        android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/profileCardview"
+        app:layout_constraintBottom_toBottomOf="@id/profile_cv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/profileCardview"
-        android:layout_width="375dp"
-        android:layout_height="400dp"
-        android:backgroundTint="#697B54"
+        android:id="@+id/profile_cv"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="230dp"
+        android:backgroundTint="@color/darkGreen"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992">
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cv_account"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:layout_gravity="center"
-            android:layout_marginTop="-80dp"
+            android:layout_marginTop="-90dp"
             app:cardCornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
-
 
             <TextView
                 android:id="@+id/textView19"
@@ -102,49 +104,36 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Account"
-                android:textSize="19sp"
+                android:fontFamily="@font/gilgan"
+                android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/edit"
-                android:layout_width="35dp"
-                android:layout_height="39dp"
-                android:layout_marginLeft="205dp"
-                android:layout_marginTop="13dp"
-                app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_current"
             android:layout_width="250dp"
             android:layout_height="65dp"
             android:layout_gravity="center"
-            android:layout_marginTop="-5dp"
+            android:layout_marginTop="-10dp"
             app:cardCornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/tv_current"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Current Reservation"
-                android:textSize="19dp"
+                android:fontFamily="@font/gilgan"
+                android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <ImageView
-                android:id="@+id/currentbtn"
-                android:layout_width="35dp"
-                android:layout_height="39dp"
-                android:layout_marginLeft="205dp"
-                android:layout_marginTop="13dp"
-                app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -156,42 +145,35 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-
             <TextView
                 android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="History"
-                android:textSize="19dp"
+                android:fontFamily="@font/gilgan"
+                android:textSize="17dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <ImageView
-                android:id="@+id/his"
-                android:layout_width="35dp"
-                android:layout_height="39dp"
-                android:layout_marginLeft="205dp"
-                android:layout_marginTop="13dp"
-                app:srcCompat="@drawable/baseline_keyboard_arrow_right_24" />
-
         </androidx.cardview.widget.CardView>
-
-        <Button
-            android:id="@+id/buttonLogout"
-            android:layout_width="188dp"
-            android:layout_height="62dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="180dp"
-            android:backgroundTint="@color/white"
-            android:text="Logout"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
-
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="188dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/gilgan"
+        android:text="Log out"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_cv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

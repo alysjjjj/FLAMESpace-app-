@@ -3,6 +3,7 @@ package com.example.flamespace
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 
 class SignUpActivity : AppCompatActivity() {
@@ -10,7 +11,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
-        val buttonClick = findViewById<ImageView>(R.id.btn_signup)
+        val buttonClick = findViewById<Button>(R.id.btn_signup)
         buttonClick.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
